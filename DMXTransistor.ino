@@ -1,7 +1,7 @@
 /*
   DMX Transtistor
 
-  Set the first DMX parameter (fixture intensity) at full, fade the rest parameters up and down one by one, and turn off intensity at the end.
+  Set the intensity parameter at full, fade the color parameters up and down one by one.
   
   Circuit: 
    - MAX485
@@ -29,16 +29,17 @@
 
 const int universeSize = 16;
 const int startAddr = 1; // the fixture's start address
-const int DMXfootprint = 10; // the fixture's DMX footprint
+const int DMXfootprint = 8; // the fixture's DMX footprint
+const int intensParam = 8; // the fixture's intensity parameter
 
-int parameterNum = 1; 
+int parameterNum = 1;
 int level = 0;
 int fade = 1;
 bool atFull = false; // record each parameter's status
 
 void setup() {
-  Serial.begin(9600);
-  while (!Serial);
+  //Serial.begin(9600);
+  //while (!Serial);
 
   // initialize the DMX library with the universe size
   if (!DMX.begin(universeSize)) {
@@ -48,18 +49,18 @@ void setup() {
 }
 
 void loop() {
-  // set channel 1 (fixture intensity) level to 255
+  // set intensity level to 255
   DMX.beginTransmission();
-  DMX.write(startAddr, 255);
+  DMX.write(startAddr + intensParam - 1, 255);
   DMX.endTransmission();
 
-  // fade next channel 0~255
+  // fade color parameters 0~255
   // when reach at full, change from fade up to fade down
   if (level >= 255){
     atFull = true;
     fade = -fade;
   }
-  int currentAddr = startAddr + parameterNum; //currentA= 1+2
+  int currentAddr = startAddr + parameterNum - 1;
   level += fade;
   level = constrain(level, 0, 255);
   DMX.beginTransmission();
@@ -68,20 +69,16 @@ void loop() {
   
   // if this channel has been at full and faded back to 0, move to next channel
   if (atFull == true && level <= 0){
-    parameterNum += 1; //10
-   // Serial.println(parameterNum);
+    parameterNum += 1;
     atFull = false;
     fade = -fade;
   }
-  Serial.println(level);
+  //Serial.println(level);
   
   delay(10);
 
   // when finish fading the last parameter
   if (parameterNum == DMXfootprint){
-    // set channel 1 level to 0
-    DMX.beginTransmission();
-    DMX.write(startAddr, 0);
-    DMX.endTransmission();
+    parameterNum = 1;
   }
 }
