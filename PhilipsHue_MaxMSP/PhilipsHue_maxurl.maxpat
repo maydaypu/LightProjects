@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1468.0, 705.0 ],
+		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,77 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-72",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.0, -42.0, 407.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 35.5, 143.0, 407.0, 35.0 ],
+					"text" : ";\rmax launchbrowser https://developers.meethue.com/develop/get-started-2/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Courier New Bold",
+					"fontsize" : 22.0,
+					"id" : "obj-65",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, -164.0, 469.0, 31.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 31.0, 13.0, 469.0, 31.0 ],
+					"text" : "Philips Hue Light Controller"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"fontface" : 0,
+					"fontname" : "Courier New",
+					"fontsize" : 14.0,
+					"id" : "obj-62",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, -98.0, 469.0, 54.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 31.0, 87.0, 469.0, 54.0 ],
+					"text" : "To understand how to access a Hue bridge’s IP address and to make a request for a username, follow the \"Get Started in Philips Hue API\" by launching this webpage:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Courier New Bold",
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, -126.0, 469.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 31.0, 54.5, 400.0, 20.0 ],
+					"text" : "Developed by Josephine Pu-Sheng Wang on June 22, 2022"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1106.0, 736.0, 248.0, 34.0 ],
+					"patching_rect" : [ 1106.0, 736.0, 248.0, 33.0 ],
 					"text" : "For troubleshooting maxurl:\nEdit below dict @embed"
 				}
 
@@ -115,7 +180,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 735.0, 22.0, 57.5, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 113.5, 57.5, 20.0 ],
+					"presentation_rect" : [ 572.0, 215.5, 57.5, 20.0 ],
 					"text" : "ON/OFF"
 				}
 
@@ -130,7 +195,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 735.0, 43.0, 37.0, 37.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 134.5, 37.0, 37.0 ]
+					"presentation_rect" : [ 572.0, 236.5, 37.0, 37.0 ]
 				}
 
 			}
@@ -226,7 +291,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 856.9375, 382.0, 88.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 192.0, 88.0, 22.0 ],
+					"presentation_rect" : [ 572.0, 294.0, 88.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "lightswitch.js",
 						"parameter_enable" : 0
@@ -257,7 +322,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 604.0, -10.0, 153.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 19.0, 153.0, 20.0 ],
+					"presentation_rect" : [ 572.0, 121.0, 153.0, 20.0 ],
 					"text" : "CHANGE LIGHT STATE"
 				}
 
@@ -270,7 +335,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 747.0, 622.5, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 232.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 572.0, 348.0, 150.0, 20.0 ],
 					"text" : "http requests status"
 				}
 
@@ -285,7 +350,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1372.1875, 51.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1247.0, 83.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 1237.0, 185.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -299,7 +364,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1156.1875, 53.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.0, 85.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 1021.0, 187.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -313,7 +378,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 937.1875, 53.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.0, 85.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 802.0, 187.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -325,7 +390,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1358.0, 435.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1127.0, 270.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 1117.0, 372.0, 150.0, 20.0 ],
 					"text" : "New Name"
 				}
 
@@ -338,7 +403,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1211.0, 403.0, 52.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.0, 270.0, 52.0, 20.0 ],
+					"presentation_rect" : [ 1021.0, 372.0, 52.0, 20.0 ],
 					"text" : "Light ID"
 				}
 
@@ -352,7 +417,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1120.0, 327.0, 153.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.0, 232.0, 153.0, 20.0 ],
+					"presentation_rect" : [ 1021.0, 334.0, 153.0, 20.0 ],
 					"text" : "CHANGE LIGHT NAME"
 				}
 
@@ -542,7 +607,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1135.0, 403.0, 74.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.0, 290.0, 74.0, 23.0 ],
+					"presentation_rect" : [ 1021.0, 392.0, 74.0, 23.0 ],
 					"tabmode" : 0
 				}
 
@@ -566,9 +631,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 833.1875, 22.0, 79.0, 34.0 ],
+					"patching_rect" : [ 833.1875, 22.0, 79.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 681.0, 61.0, 121.0, 20.0 ],
+					"presentation_rect" : [ 671.0, 163.0, 121.0, 20.0 ],
 					"text" : "Transition Time (sec)"
 				}
 
@@ -632,7 +697,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1282.0, 403.0, 174.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1127.0, 290.0, 174.0, 23.0 ],
+					"presentation_rect" : [ 1117.0, 392.0, 174.0, 23.0 ],
 					"tabmode" : 0
 				}
 
@@ -773,7 +838,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 833.1875, 58.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 681.0, 83.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 671.0, 185.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -797,7 +862,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 683.375, 643.0, 374.625, 213.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 270.0, 353.75, 358.0 ]
+					"presentation_rect" : [ 572.0, 392.0, 353.75, 358.0 ]
 				}
 
 			}
@@ -821,7 +886,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1372.1875, 29.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1247.0, 61.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 1237.0, 163.0, 150.0, 20.0 ],
 					"text" : "BRIGHTNESS 0~254"
 				}
 
@@ -834,7 +899,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1156.1875, 29.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.0, 61.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 1021.0, 163.0, 150.0, 20.0 ],
 					"text" : "SATURATION 0~254"
 				}
 
@@ -847,7 +912,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 937.1875, 29.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.0, 61.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 802.0, 163.0, 150.0, 20.0 ],
 					"text" : "HUE (0~65535)"
 				}
 
@@ -874,7 +939,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1372.1875, 95.0, 182.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1247.0, 112.0, 182.0, 25.0 ],
+					"presentation_rect" : [ 1237.0, 214.0, 182.0, 25.0 ],
 					"size" : 255.0
 				}
 
@@ -915,7 +980,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1156.1875, 95.0, 182.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1031.0, 112.0, 182.0, 25.0 ],
+					"presentation_rect" : [ 1021.0, 214.0, 182.0, 25.0 ],
 					"size" : 255.0
 				}
 
@@ -980,7 +1045,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 937.1875, 95.0, 182.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 812.0, 112.0, 182.0, 25.0 ],
+					"presentation_rect" : [ 802.0, 214.0, 182.0, 25.0 ],
 					"size" : 65536.0
 				}
 
@@ -1354,7 +1419,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 604.0, 22.0, 90.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 61.0, 90.0, 20.0 ],
+					"presentation_rect" : [ 572.0, 163.0, 90.0, 20.0 ],
 					"text" : "Enter Light ID"
 				}
 
@@ -1381,7 +1446,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 629.0, 43.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 582.0, 83.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 572.0, 185.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1472,9 +1537,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 382.75, 192.0, 101.0, 48.0 ],
+					"patching_rect" : [ 382.75, 192.0, 101.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 218.0, 316.0, 20.0 ],
+					"presentation_rect" : [ 81.0, 348.0, 316.0, 20.0 ],
 					"text" : "Bang to view all lights in system in below window"
 				}
 
@@ -1547,7 +1612,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.0, 382.0, 249.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.0, 154.0, 454.0, 22.0 ],
+					"presentation_rect" : [ 31.0, 300.0, 454.0, 22.0 ],
 					"text" : "http://IP/api/KEY/lights"
 				}
 
@@ -1564,7 +1629,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 265.0, 65.0, 213.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 282.0, 54.0, 213.0, 40.0 ],
+					"presentation_rect" : [ 257.5, 222.0, 213.0, 40.0 ],
 					"text" : "type in User Key and press 'return'"
 				}
 
@@ -1628,7 +1693,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 236.0, 123.0, 242.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 253.0, 112.0, 242.0, 23.0 ],
+					"presentation_rect" : [ 243.0, 265.0, 242.0, 23.0 ],
 					"tabmode" : 0
 				}
 
@@ -1647,7 +1712,7 @@
 					"patching_rect" : [ 34.0, 65.0, 164.0, 55.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 41.0, 54.0, 174.0, 55.0 ],
+					"presentation_rect" : [ 31.0, 207.0, 174.0, 55.0 ],
 					"text" : "type in Hue Bridge IP Address and press 'return'"
 				}
 
@@ -1711,7 +1776,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 24.0, 123.0, 174.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.0, 112.0, 174.0, 23.0 ],
+					"presentation_rect" : [ 31.0, 265.0, 174.0, 23.0 ],
 					"tabmode" : 0
 				}
 
@@ -1736,7 +1801,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 493.0, 485.0, 358.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.0, 270.0, 485.0, 358.0 ],
+					"presentation_rect" : [ 31.0, 392.0, 485.0, 358.0 ],
 					"style" : "default"
 				}
 
@@ -1778,7 +1843,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 333.0, 192.0, 48.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.0, 204.0, 48.0, 48.0 ]
+					"presentation_rect" : [ 31.0, 334.0, 48.0, 48.0 ]
 				}
 
 			}
@@ -1803,6 +1868,23 @@
 					"outlettype" : [ "dictionary", "" ],
 					"patching_rect" : [ 291.0, 369.0, 45.0, 22.0 ],
 					"text" : "maxurl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bordercolor" : [ 0.807843137254902, 0.898039215686275, 0.909803921568627, 0.0 ],
+					"id" : "obj-77",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.0, -164.0, 473.0, 166.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 31.0, 13.0, 469.0, 170.0 ],
+					"proportion" : 0.5
 				}
 
 			}
@@ -2668,8 +2750,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "lightswitch.js",
-				"bootpath" : "~/Documents/Max 8/Projects/Philips Hue_ITP/code",
-				"patcherrelativepath" : "../code",
+				"bootpath" : "/Volumes/GoogleDrive/My Drive/_ITP/Philips Hue Projects/PhilipsHue_MaxMSP",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
